@@ -6,9 +6,7 @@ import Sidebar from "./Components/Sidebar/Sidebar";
 
 function App() {
   // set states to be used in both main and sidebar
-  const [journal, setJournal] = useState(
-    JSON.parse(localStorage.journal) || []
-  );
+  const [journal, setJournal] = useState([]);
   const [activeNote, setActiveNote] = useState(false);
 
   // to store inpute in local storage to parse on refresh
